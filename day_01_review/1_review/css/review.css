@@ -1,0 +1,31 @@
+/* All CSS styles go here */
+
+.square {
+	width: 200px;
+	height: 200px;
+	background: #e600ac;
+	border: 10px orange solid;
+}
+
+.circle {
+	width: 200px;
+	height: 200px;
+	background: #ffd000;
+	border-radius: 100%;
+}
+
+.line {
+	border-left: 9px red solid;
+	width: 0px;
+	height: 600px;
+	transform: rotate(45deg);
+}
+
+.surprise {
+	width: 0px;
+	height: 0px;
+	border-top: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 150px solid red;
+}

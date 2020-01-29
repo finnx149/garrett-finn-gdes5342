@@ -1,0 +1,102 @@
+/* All CSS styles go here */
+
+/* Source Article:
+https://www.bbc.com/news/world-us-canada-51245262
+*/
+
+/* Fonts */
+
+@font-face {
+	font-family: 'Bebas';
+	src:url(../fonts/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'SourceSans-Bold';
+	src:url(../fonts/SourceSansPro-Bold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'SourceSans-Regular';
+	src:url(../fonts/SourceSansPro-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'SourceSans-Italic';
+	src:url(../fonts/SourceSansPro-Italic.ttf) format('truetype');
+}
+
+/* Container Items */
+.cover {
+	width: 100vw;
+	height: 100vh;
+	background: url("../images/cover.jpg") no-repeat center fixed;
+	background-size: cover;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	/*
+	background: #56565e;
+	*/
+}
+
+/* Paragraph Styles */
+.title {
+	color: white;
+	font-family: 'Bebas';
+	font-size: 2.8em;
+	position: absolute;
+	letter-spacing: 1.0px;
+	left: 18%;
+	bottom: 20%;
+	
+}
+
+.text {
+	font-family: 'SourceSans-Regular';
+	color: #56565e;
+	/* color: white; */
+	font-size: 16px;
+	width: 800px;
+	letter-spacing: 0.1px;
+	line-height: 24px;
+	margin: auto;
+	margin-top: 20px;
+	
+}
+
+.text:first-child {
+	font-family: 'SourceSans-Bold';
+	font-size: 24px;
+	margin-top: 60px;
+}
+
+.image {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin: auto;
+	margin-top: 20px;
+}
+
+.blurb {
+	font-family: 'SourceSans-Italic';
+	color: #56565e;
+	text-align: center;
+	font-size: 16px;
+	width: 600px;
+	letter-spacing: 0.1px;
+	line-height: 24px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.twitter-tweet {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin: auto;
+	margin-top: 20px;
+}

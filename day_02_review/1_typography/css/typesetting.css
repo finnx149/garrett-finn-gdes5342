@@ -1,0 +1,84 @@
+/* Embedded Fonts */
+@font-face {
+	font-family: 'Martel Light';
+	src:url(../fonts/Martel-Light.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Martel Reg';
+	src:url(../fonts/Martel-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src:url(../fonts/roboto.woff) format('woff');
+}
+
+/* Container Items */
+
+.cover {
+	width: 100vw;
+	height: 100vh;
+	background: url("../images/cover.jpg") no-repeat center fixed;
+	background-size: cover;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+}
+
+
+/* Paragraph Styles */
+
+.title {
+	font-family: 'Martel Light';
+	font-size: 1.8em;
+	color: #6b6b6b;
+	position: absolute;
+	letter-spacing: 0.3px;
+	left: 18%;
+	bottom: 20%;
+}
+
+.text {
+	font-family: 'Martel Reg';
+	font-size: 16px;
+	color: #5e5e5e;
+	width: 800px;
+	letter-spacing: 0.1px;
+	line-height: 24px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.text:first-child {
+	margin-top: 60px;
+}
+
+.mark {
+	color: red;
+}
+
+.link {
+	font-family: 'Roboto';
+	font-size: 15px;
+	text-align: center;
+	color: #6b6b6b;
+	letter-spacing: 0.1px;
+	margin: auto;
+	margin-top: 60px;
+	display: block;
+	border: solid 2px #939393;
+	width: 320px;
+	line-height: 24px;
+	padding: 10px 0 10px 0;
+	text-decoration: none;
+	transition: 0.4s;
+}
+
+.link:hover {
+	color: white;
+	background: #939393;
+	transition: 0.4s;
+}

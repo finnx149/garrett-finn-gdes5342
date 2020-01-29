@@ -1,0 +1,57 @@
+.tile {
+	width: 44px;
+	height: 50px;
+	opacity: 0.5;
+}
+
+.board {
+	width: 782px;
+	height: 872px;
+	border: solid red 1px;
+	background: url(../images/board.png);
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.e {
+	position: absolute;
+	left: 87px;
+	top: 676px;
+}
+
+.g {
+	position: absolute;
+	left: 87px;
+	top: 517px;
+}
+
+.h {
+	position: absolute;
+}
+
+.l {
+	position: absolute;
+	left: 322px;
+	top: 782px;
+}
+
+.o {
+	position: absolute;
+	left: 87px;
+	top: 570px;
+}
+
+.r {
+	position: absolute;
+	left: 87px;
+	top: 623px;
+}
+
+.u {
+	position: absolute;
+	left: 369px;
+	top: 782px;
+}

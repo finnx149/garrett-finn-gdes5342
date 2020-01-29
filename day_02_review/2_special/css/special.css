@@ -1,0 +1,29 @@
+/* FF Meta Font */
+@font-face {
+	font-family: 'FF Meta VF';
+	src: url(../fonts/MetaVariableDemo-Set.woff2) format('woff2');
+	font-style: normal italic;
+	font-weight: 100 900;
+}
+
+/* League Mono Font */
+@font-face {
+	font-family: 'LeagueMono';
+	src: url(../fonts/LeagueMonoVariable.ttf) format('truetype');
+	font-weight: 30 200;
+}
+
+.meta {
+	font-family: 'FF Meta VF';
+	font-size: 80px;
+	font-weight: 300;
+}
+
+.league {
+	font-family: 'LeagueMono';
+	font-size: 80px;
+	font-weight: 200;
+	font-variation-settings: "wdth" 200;
+	text-rendering: geometricPrecision;
+}
+
