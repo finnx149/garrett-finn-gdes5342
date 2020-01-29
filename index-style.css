@@ -1,0 +1,31 @@
+/* index style CSS */
+
+/* colors */
+:root {
+	--aBlack: #040c06;
+	--aDarkLow: #112318;
+	--aDarkHigh: #1e3a29;
+	--aMidLow: #305d42;
+	--aMidHigh: #4d8061;
+	--aBrightLow: #89a257;
+	--aBrightHigh: #bedc7f;
+	--aWhite: #eeffcc;
+}
+
+/* generic style */
+*{
+	
+	color: var(--aBrightHigh);
+	font-family: "Lucida Console", sans-serif;
+	line-height: 32px;
+	background-color: var(--aBlack)
+}
+
+/* link styling */
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
