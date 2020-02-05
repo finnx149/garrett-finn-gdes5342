@@ -1,0 +1,11 @@
+// ideas
+- atypical user interaction
+- looks cool
+- interactive map? like that product map from example
+
+
+Project Ideas:
+| interactive map of D&D world
+|--> click on different areas to read blurbs/see dungeon layouts
+
+| 

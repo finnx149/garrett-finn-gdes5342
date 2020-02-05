@@ -1,0 +1,116 @@
+/* Global Styles : DO NOT EDIT */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.grid_container {
+	width: 200px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.mono {
+	font-family: 'Fjalla One';
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+
+/* Animation Keyframes */
+
+@keyframes b_fade {
+	0% 		{ opacity: 0; }
+	100% 	{ opacity: 1; }
+}
+
+.b {
+	opacity: 0;
+	animation: b_fade 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+
+@keyframes e_move {
+	0%, 100% 	{ top: 0px; }
+	50% 		{ top: -150px; }
+}
+
+.e {
+	position: relative;
+	animation: e_move 2s;
+	
+}
+
+@keyframes t_move {
+	0%,100% { top: 0px; 	left: 0px; }
+	25% 	{ top: -150px; 	left: 0px; }
+	50% 	{ top: -150px; 	left: 300px; }
+	75% 	{ top: 200px; 	left: 300px; }
+}
+
+.t {
+	position: relative;
+	animation: t_move 2s infinite;
+}
+
+@keyframes a_move {
+	0%		{ top: 0px;		color: black; }
+	100%	{ top: 200px;	color: red; }
+}
+
+.a {
+	position: relative;
+	animation: a_move 1s alternate infinite cubic-bezier(1,0,0,1);
+}
+
+@keyframes rotate {
+	0%		{ transform: rotate(0deg); }
+	100%	{ transform: rotate(360deg); }
+}
+
+.square {
+	width: 300px;
+	height: 300px;
+	background: red;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+	z-index: -1;
+	animation: rotate 9s infinite linear;
+}
+
+/* Save the code below for later */
+
+
+@keyframes woah {
+	0% 	{ transform: rotate(0deg); width: 0px; height: 0px; border-radius: 0%; opacity: 0; }
+	20%	{ transform: rotate(0deg); width: 300px; height: 0px; border-radius: 0%; opacity: 1; }
+	40%	{ transform: rotate(0deg); width: 300px; height: 300px; border-radius: 0%; opacity: 1; }
+	60%	{ transform: rotate(-360deg); width: 300px; height: 300px; border-radius: 0%; opacity: 1; }
+	80% 	{ transform: rotate(-360deg); width: 10px; height: 10px; border-radius: 100%; opacity: 1;  }
+	100% 	{ transform: rotate(-360deg); width: 600px; height: 600px; border-radius: 100%; opacity: 0; }
+}
+
+.square_circle {
+	width: 0px;
+	height: 0px;
+	border: solid black 1px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: -1;
+	opacity: 0;
+	animation: woah 4s infinite cubic-bezier(1,0,0,1);
+}

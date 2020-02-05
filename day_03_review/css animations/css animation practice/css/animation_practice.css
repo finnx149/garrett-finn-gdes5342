@@ -1,0 +1,312 @@
+/* this is where all of your CSS styles go */
+
+@keyframes anim_bg {
+	0%,40% 		{ background-color: white; }
+	50%,100%	{ background-color: black; }
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	animation: anim_bg 4s alternate infinite;
+}
+
+.grid_container {
+	width: 470px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -100px;
+	margin-left: -235px;
+}
+
+.mono {
+	font-family: 'Fjalla One';
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+/* animations */
+
+@keyframes anim_one_f {
+	0%,30% { 
+		top: 0px;		left: 0px; 
+		color: black;
+		opacity: 1;
+	}
+	40% {
+		top: 200px;		left: 50px;
+		color: black;
+		opacity: 0;
+	}
+	50% {
+		top: -200px;	left: 279px;
+		color: white;
+		opacity: 0;
+	}
+	60%,100% { 
+		top: 0px;		left: 329px; 
+		color: white;
+		opacity: 1;
+		
+	}
+}
+
+.oneF {
+	position: relative;
+	animation: anim_one_f 4s alternate infinite;
+}
+
+@keyframes anim_two_o {
+	0%,30% { 
+		top: 0px; 		left: 0px;
+		color: black;
+		opacity: 1;
+	}
+	40% {
+		top: 0px;		left: -200px;
+		color: black;
+		opacity: 0;
+	}
+	50% {
+		top: 0px;		left: 153px;
+		color: white;
+		opacity: 0;
+	}
+	60%,100% { 
+		top: 0px;		left: -47px; 
+		color: white;
+		opacity: 1;
+	}
+}
+
+.twoO {
+	position: relative;
+	animation: anim_two_o 4s alternate infinite;
+}
+
+@keyframes anim_thr_r {
+	0%,30% { 
+		top: 0px; 		left: 0px; 
+		color: black;
+		opacity: 1;
+	}
+	40% {
+		top: -200px;		left: -50px;
+		color: black;
+		opacity: 0;
+	}
+	50% {
+		top: 200px;		left: 99px;
+		color: white;
+		opacity: 0;
+	}
+	60%,100% { 
+		top: 0px;		left: 49px; 
+		color: white;
+		opacity: 1;
+	}
+}
+
+.thrR {
+	position: relative;
+	animation: anim_thr_r 4s alternate infinite;
+}
+
+@keyframes anim_for_t {
+	0%,30% { 
+		top: 0px; 		left: 0px; 
+		color: black;
+		opacity: 1;
+	}
+	40% {
+		top: 200px;		left: -50px;
+		color: black;
+		opacity: 0;
+	}
+	50% {
+		top: -200px;		left: 276px;
+		color: white;
+		opacity: 0;
+	}
+	60%,100% { 
+		top: 0px;		left: 226px; 
+		color: white;
+		opacity: 1;
+	}
+}
+
+.forT {
+	position: relative;
+	animation: anim_for_t 4s alternate infinite;
+}
+
+@keyframes anim_fiv_y {
+	0%,30% { 
+		top: 0px; 		left: 0px; 
+		color: black;
+		opacity: 1;
+	}
+	40% {
+		top: -200px;		left: 50px;
+		color: black;
+		opacity: 0;
+	}
+	50% {
+		top: 200px;		left: 180px;
+		color: white;
+		opacity: 0;
+	}
+	60%,100% { 
+		top: 0px;		left: 230px; 
+		color: white;
+		opacity: 1;
+	}
+}
+
+.fivY {
+	position: relative;
+	animation: anim_fiv_y 4s alternate infinite;
+}
+
+@keyframes anim_dash {
+	0%,30% { 
+		top: 0px;		left: 0px;
+		color: black;
+		opacity: 1;
+	}
+	40% {
+		top: -200px;	left: 0px;
+		color: black;
+		opacity: 0;
+	}
+	50% {
+		top: 200px;		left: -47px;
+		color: white;
+		opacity: 0;
+	}
+	60%,100% { 
+		top: 0px;		left: -47px;
+		color: white;
+		opacity: 1;
+	}
+}
+
+.dash {
+	position: relative;
+	animation: anim_dash 4s alternate infinite;
+}
+
+@keyframes anim_six_f {
+	0%,30% { 
+		top: 0px; 		left: 0px; 
+		color: black;
+		opacity: 1;
+	}
+	40% {
+		top: -200px;		left: -50px;
+		color: black;
+		opacity: 0;
+	}
+	50% {
+		top: 200px;		left: 3px;
+		color: white;
+		opacity: 0;
+	}
+	60%,100% { 
+		top: 0px;		left: -47px; 
+		color: white;
+		opacity: 1;
+	}
+}
+
+.sixF {
+	position: relative;
+	animation: anim_six_f 4s alternate infinite;
+}
+
+@keyframes anim_sev_i {
+	0%,30%	{ 
+		top: 0px; 		left: 0px; 
+		color: black;
+		opacity: 1;
+	}
+	40% {
+		top: 0px;		left: -200px;
+		color: black;
+		opacity: 0;
+	}
+	50% {
+		top: 0px;		left: 153px;
+		color: white;
+		opacity: 0;
+	}
+	60%,100% { 
+		top: 0px;		left: -47px; 
+		color: white;
+		opacity: 1;
+	}
+}
+
+.sevI {
+	position: relative;
+	animation: anim_sev_i 4s alternate infinite;
+}
+
+@keyframes anim_eig_v {
+	0%,30% { 
+		top: 0px;	 	left: 0px; 
+		color: black;
+		opacity: 1;
+	}
+	40% {
+		top: 200px;		left: 50px;
+		color: black;
+		opacity: 0;
+	}
+	50%  {
+		top: -200px;	left: -371px;
+		color: white;
+		opacity: 0;
+	}
+	60%,100% { 
+		top: 0px;		left: -321px; 
+		color: white;
+		opacity: 1;
+	}
+}
+
+.eigV {
+	position: relative;
+	animation: anim_eig_v 4s alternate infinite;
+}
+
+@keyframes anim_nin_e {
+	0%,30% { 
+		top: 0px; 		left: 0px; 
+		color: black;
+		opacity: 1;
+	}
+	40% {
+		top: -200px;		left: 50px;
+		color: black;
+		opacity: 0;
+	}
+	50% {
+		top: 200px;		left: -369px;
+		color: white;
+		opacity: 0;
+	}
+	60%,100% { 
+		top: 0px;		left: -319px; 
+		color: white;
+		opacity: 1;
+	}
+}
+
+.ninE {
+	position: relative;
+	animation: anim_nin_e 4s alternate infinite;
+}
