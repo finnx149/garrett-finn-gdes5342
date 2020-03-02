@@ -1,0 +1,22 @@
+.square {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 300px;
+	left: 300px;
+	font-family: Helvetica;
+	font-size: 18px;
+	text-align: center;
+	line-height: 90px;
+	color: white;
+}
+
+.black {
+	background: black;
+	z-index: 2;
+}
+
+.red {
+	background: red;
+	z-index: 1;
+}

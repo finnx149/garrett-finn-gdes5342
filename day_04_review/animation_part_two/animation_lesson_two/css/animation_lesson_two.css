@@ -1,0 +1,199 @@
+body {
+	background: #a6feff;
+}
+
+/* lyrics reveal */
+
+.lyrics {
+	color: white;
+	font-family: Georgia;
+	font-size: 18px;
+	letter-spacing: 1.2px;
+	width: 890px;
+	height: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: type 6s steps(100);
+}
+
+@keyframes type {
+	0% {
+		width: 0px;
+	}
+	100% {
+		width: 890px;
+	}
+}
+
+/* smoke text blur */
+
+.smoke {
+	font-family: "PT Sans";
+	font-size: 30px;
+	color: white;
+	margin: 105px;
+	width: 90px;
+	filter: blur(0px);
+	transition: filter 0.5s;
+}
+
+.smoke:hover {
+	filter: blur(5px);
+	transition: filter 0.5s;
+}
+
+/* parent and child animation */
+
+.square {
+	width: 100px;
+	height: 100px;
+	border: dashed white 1px;
+	box-sizing: border-box;
+	padding: 33px;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	transition: 1s;
+}
+
+.circle {
+	width: 30px;
+	height: 30px;
+	border: solid white 1px;
+	background: white;
+	border-radius: 100%;
+	position: relative;
+	left: 0px;
+	transition: 1s;
+}
+
+.square:hover {
+	border: solid white 1px;
+	background: white;
+	transform: rotate(360deg);
+	padding: 0;
+	transition: 1s;
+}
+
+.square:active {
+	border-radius: 100%;
+	background: yellow;
+	border: yellow;
+	transform: scale(0.95);
+	transition: 0.75s;
+}
+
+.square:hover .circle {
+	width: 100px;
+	height: 100px;
+	left: 200px;
+	border: solid black 1px;
+	border-radius: 0%;
+	background: black;
+	transition: 1s;
+}
+
+/* ACE animation */
+
+.a {
+	font-family: "PT Sans";
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	left: 100px;
+	cursor: default;
+}
+
+.a::before {
+	content: 'C';
+	position: absolute;
+	left: 0px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.a::after {
+	content: 'E';
+	position: absolute;
+	left: 0px;
+	opacity: 0;
+	transition: 0.5s; 
+}
+
+.a_box:hover .a::before {
+	left: 30px;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.a_box:hover .a::after {
+	left: 60px;
+	opacity: 1;
+	transition: 0.5s;
+	transition-delay: 0.1s;
+}
+
+.a_box:active .a::before {
+	left: 300px;
+	transition: 0.8s;
+	transition-delay: 0.2s;
+}
+
+.a_box:active .a::after {
+	left: 600px;
+	transition: 0.8s;
+	transition-delay: 0.2s;
+}
+
+/* eye */
+
+.eye {
+	width: 200px;
+	height: 200px;
+	background: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	border-radius: 75% 0;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.iris {
+	width: 72px;
+	height: 72px;
+	background: #222f3e;
+	border-radius: 50%;
+	border: 30px solid #ef888c;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.lid {
+	width: 300px;
+	height: 160px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/* background: red; */
+	transform: translate(-50%, -50%) rotate(-45deg);
+	z-index: 1;
+}
+
+.lid span {
+	display: block;
+	width: 100%;
+	height: 0%;
+	background: #ef888c;
+	border-radius: 0 0 60% 60%;
+	transition: 0.4s all;
+}
+
+.eye:hover span {
+	height: 100%;
+	transition: 0.4s all;
+}
+

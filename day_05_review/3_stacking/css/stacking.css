@@ -1,0 +1,119 @@
+@font-face {
+	font-family: strato_c;
+	src: url(../fonts/strato_cesello.woff2);
+}
+
+@font-face {
+	font-family: strato_e;
+	src: url(../fonts/strato_eclisse.woff2);
+}
+
+@font-face {
+	font-family: strato_i;
+	src: url(../fonts/strato_inline.woff2);
+}
+
+@font-face {
+	font-family: strato_r;
+	src: url(../fonts/strato_roman.woff2);
+}
+
+@font-face {
+	font-family: strato_t;
+	src: url(../fonts/strato_tonale.woff2);
+}
+
+.flip {
+	width: 240px;
+	height: 200px;
+	margin: 100px;
+	/* how far the "camera" is from the object */
+	perspective: 600px;
+}
+
+.flip:hover .heads {
+	transform: rotateY(-180deg);
+}
+
+.flip:hover .tails {
+	transform: rotateY(0deg);
+}
+
+.heads {
+	position: absolute;
+	background: #f9cc43;
+	width: 240px;
+	height: 200px;
+	backface-visibility: hidden;
+	transform: rotateY(0deg);
+	transition: transform .5s;
+}
+
+.tails {
+	position: absolute;
+	background: #42f4c5;
+	width: 240px;
+	height: 200px;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	transition: transform .5s;
+}
+
+.panel {
+	position: absolute;
+	width: 640px;
+	top: 200px;
+	left: 200px;
+	perspective: 20000px;
+	transform-style: preserve-3d;
+	animation: turn 3s alternate infinite;
+}
+
+@keyframes turn {
+	0% {
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+	30% {
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+	100% {
+		transform: rotateX(20deg) rotateY(80deg);
+	}
+}
+
+.word {
+	position: absolute;
+	font-size: 200px;
+	text-transform: uppercase;
+}
+
+.strato_r {
+	transform: translateZ(0px);
+	font-family: strato_r;
+	color: #a2adff;
+}
+
+.strato_c {
+	transform: translateZ(100px);
+	font-family: strato_c;
+	color: #c9cfff;
+}
+
+.strato_i {
+	transform: translateZ(200px);
+	font-family: strato_i;
+	color: #7d89e7;
+}
+
+.strato_e {
+	transform: translateZ(50px);
+	font-family: strato_e;
+	color: #5a66c4;
+}
+
+.strato_t {
+	transform: translateZ(150px);
+	font-family: strato_t;
+	color: #7c88e6;
+}
+

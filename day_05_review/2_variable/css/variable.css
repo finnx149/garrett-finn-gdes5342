@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'LeagueMono';
+	src: url(../fonts/LeagueMono.ttf);
+}
+
+@font-face {
+	font-family: 'Wind';
+	src: url(../fonts/Wind.woff2);
+}
+
+.league {
+	font-family: LeagueMono;
+	font-size: 80px;
+	font-weight: 100;
+	/*
+	font-variation-settings: "wdth" 30;
+	*/
+	text-rendering: geometricPrecision;
+	animation: league infinite alternate 2s;
+}
+
+@keyframes league {
+	0% {
+		font-variation-settings: "wdth" 30;
+	}
+	100% {
+		font-variation-settings: "wdth" 200;
+	}
+}
+
+.wind {
+	font-family: Wind;
+	font-size: 80px;
+	text-transform: uppercase;
+	animation: blow 2s alternate infinite;
+}
+
+@keyframes blow {
+	0% {
+		font-variation-settings: "WIND" 0;
+	}
+	100% {
+		font-variation-settings: "WIND" 180;
+	}
+}
+
+@font-face {
+	font-family: 'Decovar';
+	src: url(../fonts/DecovarAlpha.ttf);
+}
+
+.deco {
+	font-family: Decovar;
+	font-size: 200px;
+	animation: deco infinite alternate 6s;
+}
+
+@keyframes deco {
+	0% {
+		font-variation-settings: "BLDA" 0, "SKLA" 0, "SKLB" 0, "TRMK" 0;
+	}
+	25% {
+		font-variation-settings: "BLDA" 1000, "SKLA" 0, "SKLB" 0, "TRMK" 0;
+	}
+	50% {
+		font-variation-settings: "BLDA" 0, "SKLA" 1000, "SKLB" 0, "TRMK" 0;
+	}
+	75% {
+		font-variation-settings: "BLDA" 0, "SKLA" 0, "SKLB" 1000, "TRMK" 0;
+	}
+	100% {
+		font-variation-settings: "BLDA" 0, "SKLA" 0, "SKLB" 0, "TRMK" 1000;
+	}
+}
+
+@font-face {
+	font-family: 'Zycon';
+	src: url(../fonts/Zycon.ttf);
+}
+
+.zycon {
+	font-family: Zycon;
+	font-size: 80px;
+	animation: crazy 1s linear infinite alternate;
+}
+
+@keyframes crazy {
+	0% {
+		font-variation-settings: "T1  " 1, "T2  " 0, "T3  " 0, "T4  " 0, "M1  " -1, "M2  " -1;
+	}
+	100% {
+		font-variation-settings: "T1  " 0, "T2  " 1, "T3  " 1, "T4  " 1, "M1  " 1, "M2  " 1;
+	}
+}

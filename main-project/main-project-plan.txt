@@ -8,4 +8,4 @@ Project Ideas:
 | interactive map of D&D world
 |--> click on different areas to read blurbs/see dungeon layouts
 
-| 
+|

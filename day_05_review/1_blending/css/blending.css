@@ -1,0 +1,73 @@
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.plant {
+	width: 500px;
+	height: 330px;
+	background: url(../images/plant.jpg);
+	background-size: 100%;
+}
+
+.fox {
+	width: 500px;
+	height: 330px;
+	background: url(../images/fox.jpg);
+	background-size: 100%;
+	mix-blend-mode: multiply;
+}
+
+.grad {
+	position: absolute;
+	width: 420px;
+	height: 90px;
+	background: linear-gradient(45deg, red, yellow, purple, blue);
+	background-size: 300% 300%;
+	animation: gradient 15s infinite;
+}
+
+.mask {
+	font-family: Raleway;
+	color: black;
+	background: white;
+	font-size: 90px;
+	mix-blend-mode: screen;
+	/* 
+	screen:
+		white is opaque and black is transparent
+	*/
+}
+
+@keyframes gradient {
+	0&		{ background-position: 0% 50%; }
+	50%		{ background-position: 100% 50%; }
+	100%	{ background-position: 0% 50%; }
+}
+
+.wipe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
+	background-size: 200%;
+	animation: bw_slide 3s infinite alternate linear;
+	z-index: -1;
+}
+
+@keyframes bw_slide {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 100% 0%;
+	}
+}
+
+.text {
+	font-family: 'Open Sans';
+	font-size: 100px;
+	color: white;
+	text-align: center;
+	mix-blend-mode: difference;
+}

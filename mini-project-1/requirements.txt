@@ -1,0 +1,11 @@
+-may redesign cover in any way
+-preserve dimensions of cover, keep height to 600px
+-book cover centered horizontally
+-
+
+
+ideas:
+
+dune
+anciallry justice
+space cats
