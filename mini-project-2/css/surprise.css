@@ -1,0 +1,52 @@
+/* document style */
+html,body {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+/* button styles */
+.button {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: url(../media/mario-star.png);
+	background-size: 100%;
+	z-index: 100;
+	opacity: 100%;
+}
+
+.buttonChanged {
+	opacity: 0%;
+}
+
+.star {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0%;
+}
+
+.starChanged {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background: url(../media/mario-star.png);
+	background-size: 100%;
+	z-index: 100;
+	opacity: 100%;
+	-webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+	}
+}
+
